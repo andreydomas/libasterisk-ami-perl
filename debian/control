@@ -2,14 +2,14 @@ Source: libasterisk-ami-perl
 Section: perl
 Priority: optional
 Maintainer: Andrey Domas <andrey.domas@gmail.com>
-Build-Depends: debhelper (>=7), libanyevent-perl, libscalar-list-utils-perl
-Build-Depends-Indep: perl
+Build-Depends: debhelper (>=7)
+Build-Depends-Indep: perl, libanyevent-perl
 Standards-Version: 3.8.3
 Homepage: http://search.cpan.org/dist/Asterisk-AMI/
 
 Package: libasterisk-ami-perl
 Architecture: all
-Depends: ${perl:Depends}, ${misc:Depends}
+Depends: ${perl:Depends}, ${misc:Depends}, libanyevent-perl, libscalar-list-utils-perl
 Description:  Perl module for interacting with the Asterisk Manager Interface
  This module provides an interface to the Asterisk Manager Interface. It's goal
  is to provide a flexible, powerful, and reliable way to interact with Asterisk
